@@ -1,8 +1,8 @@
 @charset "UTF-8";
 
 *{
-   margin: 0;
-   padding: 0; 
+   margin: 0px;
+   padding: 0px; 
    font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -10,13 +10,13 @@ html, body {
 
     height: 100vh;
     width: 100vw;
-    background-color: black;
+   
 }
 
 main{
     position: relative;
     height: 100vh;
-    position: relative;
+    
     
    
 }
@@ -48,4 +48,26 @@ iframe#tela{
     width: 267px;
     height: 471px;
 
+}
+
+section#redes-sociais{
+  position: absolute;
+  right: 6%;
+ 
+}
+
+section#redes-sociais img /*poderíamos escrever section#redes-sociais > a > img, porém não podemos section#redes-sociais > img devido ao link (a)que tem entre as duas tags,  */ {
+    width: 50px;
+    margin: 10px;
+    border-radius: 50%; /*a imagem sendo quadrado ao colocarmos border-radius em 50% nos dará um círculo.*/
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.426);
+    box-sizing: border-box; /*esse comando faz com que a borda escolhida em section#redes-sociais img:hover não se movimentem grupalmente, ou seja, a borda vai fazer parte da caixa individual mexendo um ícone de cada vez conforme exercício. Caso queria ver como ela se comportava anteriormente retire o comando box-sizing: border-box;*/
+
+}
+
+section#redes-sociais img:hover {
+    border: 2px solid rgba(255, 255, 255, 0.596);
+    transform: translate(-3px, -3px); /*faz com que o botão tenha movimento*/ 
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.653);/*colocamos uma sombra para quando a gente passar o mouse por cima do botão realmente dê a sensação de profundidade*/
+    transition: transform 0.4s, border 1s; /*altera o tempo de reação ao passar o mouse no botão*/
 }
