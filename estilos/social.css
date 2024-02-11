@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+::-webkit-scrollbar { /*faz com que suma a barra de rolagem da navegação*/
+    width: 0px;
+    height: 0px;
+}
+img{
+    width: 100vw; /*foi coloca a largura completa da imagem para que ela seja carregada dentro do iframe e não apareça bordas.*/
+
+}
+a{
+    display: block;/*para que o texo do link(a) ACESSE seja exibido em baixo da imagem, vire um bloco*/
+    background-color: darkred;
+    padding: 20px;
+    text-align: center;
+    font-weight: bolder;
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    background-color: red;
+}
